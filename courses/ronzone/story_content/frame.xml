@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="false">
             <options>
-              <option name="title_text" value="ronzone" />
+              <option name="title_text" value="ronmon" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -1597,7 +1597,7 @@
         <slidelink slideid="_player.6bnHet4yFTZ" displaytext="Battle 1" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6bnHet4yFTZ.62LiaFljPNP" displaytext="Battle 1.2" expand="false" type="slide" />
-            <slidelink slideid="_player.6bnHet4yFTZ.6UZaJ9uCXPm" displaytext="Battle 1" expand="false" type="slide" />
+            <slidelink slideid="_player.6bnHet4yFTZ.6UZaJ9uCXPm" displaytext="Battle 1 (Tutorial)" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.67sSWbNTsqs" displaytext="Battle 2" expand="true" type="slide">
@@ -1632,7 +1632,7 @@
             <slidelink slideid="_player.5w93O5BTOih.6oqxjYMAiQS" displaytext="Lesson 1" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5nUkhN728he" displaytext="Lesson 1" expand="true" type="slide">
+        <slidelink slideid="_player.5nUkhN728he" displaytext="Lesson 2" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.5nUkhN728he.64VMDnNb81R" displaytext="Lesson 2" expand="false" type="slide" />
           </links>

@@ -13,7 +13,7 @@ var showPointer = player.showPointer;
 var hidePointer = player.hidePointer;
 var slideWidth = player.slideWidth;
 var slideHeight = player.slideHeight;
-window.Script204 = function()
+window.Script202 = function()
 {
   function addCssToHead(cssRules) {
     var styleElement = document.createElement('style');
@@ -24,7 +24,7 @@ var css = `#light-box-close { display: none !important;} `;
 addCssToHead(css);
 }
 
-window.Script205 = function()
+window.Script203 = function()
 {
   let player = GetPlayer()
 let name1 = player.GetVar('name')
@@ -32,12 +32,26 @@ let count1 = name1.length
 player.SetVar('count', count1)
 }
 
-window.Script206 = function()
+window.Script204 = function()
 {
   let player = GetPlayer()
 let name2 = player.GetVar('vername')
 let count1 = name2.length
 player.SetVar('count', count1)
+}
+
+window.Script205 = function()
+{
+  var randomnumber = Math.floor((Math.random()*5)+1);
+var player = GetPlayer();
+player.SetVar("randnum",randomnumber);
+}
+
+window.Script206 = function()
+{
+  var randomnumber = Math.floor((Math.random()*5)+1);
+var player = GetPlayer();
+player.SetVar("randnum",randomnumber);
 }
 
 window.Script207 = function()
@@ -55,20 +69,6 @@ player.SetVar("randnum",randomnumber);
 }
 
 window.Script209 = function()
-{
-  var randomnumber = Math.floor((Math.random()*5)+1);
-var player = GetPlayer();
-player.SetVar("randnum",randomnumber);
-}
-
-window.Script210 = function()
-{
-  var randomnumber = Math.floor((Math.random()*5)+1);
-var player = GetPlayer();
-player.SetVar("randnum",randomnumber);
-}
-
-window.Script211 = function()
 {
   var randomnumber = Math.floor((Math.random()*5)+1);
 var player = GetPlayer();
