@@ -51,8 +51,8 @@ If you like this project, please star it and share it with your friends!
 
 ## Contact
 If you have any questions or suggestions, feel free to reach out via:
-- **Email:** sathish31102004@gmail.com
-- **LinkedIn:** [@sathishk-dev](https://linkedin.com/in/sathishk-dev)
+- **Email:** ronflakes@gmail.com
+- **LinkedIn:** [@ronflakes](https://www.linkedin.com/in/roneltaruc/)
 
 ---
-Made with ❤️ by Sathish Kumar.
+Made with ❤️ by Ron Taruc.

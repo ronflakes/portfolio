@@ -7,36 +7,112 @@ import { CgFigma } from "react-icons/cg";
 
 export default function Skills() {
   const [skills] = useState([
-    { id: 1, name: "JavaScript", icon: <FaJs size={50} /> },
-    { id: 2, name: "React", icon: <FaReact size={50} /> },
-    { id: 3, name: "Node.js", icon: <FaNodeJs size={50} /> },
-    { id: 4, name: "Python", icon: <FaPython size={50} /> },
-    { id: 5, name: "MongoDB", icon: <FaDatabase size={50} /> },
-    { id: 6, name: "Java", icon: <FaJava size={50} /> },
-    { id: 7, name: "Postgresql", icon: <BiLogoPostgresql size={50} /> },
-    { id: 8, name: "Next.js", icon: <RiNextjsFill size={50} /> },
-    { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
-    { id: 10, name: "Figma", icon: <CgFigma size={50} /> },
+    { id: 1, name: "Articulate 360", icon: <img src="/skills/art.jpg" alt="Articulate" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 2, name: "Premiere Pro", icon: <img src="/skills/pr.png" alt="Premiere Pro" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 3, name: "Photoshop", icon: <img src="/skills/ps.png" alt="Photoshop" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 4, name: "Workday", icon: <img src="/skills/workday.png" alt="Workday" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 5, name: "Pictory", icon: <img src="/skills/pictory.png" alt="Pictory" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 6, name: "Camtasia", icon: <img src="/skills/camtasia.webp" alt="Camtasia" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 7, name: "ComfyUI", icon: <img src="/skills/comfy.webp" alt="ComfyUI" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 8, name: "Captivate", icon: <img src="/skills/captivate.png" alt="Captivate" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 9, name: "Vyond", icon: <img src="/skills/vyond.png" alt="Vyond" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 10, name: "Audacity", icon: <img src="/skills/audacity.png" alt="Audacity" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 11, name: "Canva", icon: <img src="/skills/canva.svg" alt="Canva" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 12, name: "Eleven Labs", icon: <img src="/skills/eleven1.png" alt="Eleven Labs" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 13, name: "WordPress", icon: <img src="/skills/wp.png" alt="WordPress" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 14, name: "Google Gemini", icon: <img src="/skills/gemini.webp" alt="Gemini" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 15, name: "Vegas Pro", icon: <img src="/skills/vegas.png" alt="Vegas Pro" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 11, name: "360 Studio", icon: <img src="/skills/360.png" alt="Insta 360 Studio" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 12, name: "Powtoon", icon: <img src="/skills/Powtoon.webp" alt="Powtoon" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 13, name: "Squarespace", icon: <img src="/skills/ss.webp" alt="Squarespace" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 14, name: "OBS Studio", icon: <img src="/skills/obs.png" alt="OBS Studio" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 15, name: "Office 365", icon: <img src="/skills/ofc.svg" alt="Office 365" style={{ width: '75px', height: 'auto' }} /> },
   ]);
 
   const [experiences] = useState([
     {
       id: 1,
-      company: "Google",
-      role: "Lead Software Engineer",
-      period: "Nov 2019 - Present",
+      company: "Verizon",
+      role: "Sr Instructional Design Manager",
+      period: "Jul 2024 - present",
       description:
-        "Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience.",
-      logo: "/assets/google.svg",
+        (
+  <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">
+    <li>
+      Designed and developed high-impact, gamified learning solutions using Articulate Storyline 360 (utilizing custom JavaScript & xAPI) and Rise 360, translating complex technical concepts into engaging simulations.
+    </li>
+    <li>
+      Led the end-to-end training lifecycle using ADDIE and SAM models from conducting needs analysis with SMEs to creating detailed SOPs, Facilitator Guides, and Job Aids.
+    </li>
+    <li>
+      Managed stakeholder relationships and learning strategies, while overseeing LMS administration and ensuring all content met universal accessibility and inclusivity standards.
+    </li>
+  </ul>
+),
+      logo: "/assets/v.jpg",
     },
     {
       id: 2,
-      company: "Youtube",
-      role: "Software Engineer",
-      period: "Jan 2017 - Oct 2019",
+      company: "Aurecon Australasia Pty Ltd",
+      role: "Digital Technologist",
+      period: "Feb 2018 - June 2024",
       description:
-        "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
-      logo: "/assets/youtube.svg",
+        (
+  <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">
+    <li>
+      Delivered tailored eLearning and multimedia solutions for a global workforce, effectively managing remote collaboration with stakeholders across Australia and Asia.
+    </li>
+    <li>
+      Acted as the primary technical lead for content creation, utilizing Articulate 360, Adobe Creative Cloud, and video production tools to build high-performing training modules.
+    </li>
+    <li>
+      Established strong partnerships with SMEs to translate complex business strategies into interactive digital learning experiences.
+    </li>
+  </ul>
+),
+      logo: "/assets/aurecon.webp",
+    },
+        {
+      id: 1,
+      company: "Verizon",
+      role: "Sr Instructional Design Manager",
+      period: "Jul 2024 - present",
+      description:
+        (
+  <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">
+    <li>
+      Designed and developed high-impact, gamified learning solutions using Articulate Storyline 360 (utilizing custom JavaScript & xAPI) and Rise 360, translating complex technical concepts into engaging simulations.
+    </li>
+    <li>
+      Led the end-to-end training lifecycle using ADDIE and SAM models from conducting needs analysis with SMEs to creating detailed SOPs, Facilitator Guides, and Job Aids.
+    </li>
+    <li>
+      Managed stakeholder relationships and learning strategies, while overseeing LMS administration and ensuring all content met universal accessibility and inclusivity standards.
+    </li>
+  </ul>
+),
+      logo: "/assets/v.jpg",
+    },
+    {
+      id: 2,
+      company: "Aurecon Australasia Pty Ltd",
+      role: "Digital Technologist",
+      period: "Feb 2018 - June 2024",
+      description:
+        (
+  <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">
+    <li>
+      Delivered tailored eLearning and multimedia solutions for a global workforce, effectively managing remote collaboration with stakeholders across Australia and Asia.
+    </li>
+    <li>
+      Acted as the primary technical lead for content creation, utilizing Articulate 360, Adobe Creative Cloud, and video production tools to build high-performing training modules.
+    </li>
+    <li>
+      Established strong partnerships with SMEs to translate complex business strategies into interactive digital learning experiences.
+    </li>
+  </ul>
+),
+      logo: "/assets/aurecon.webp",
     },
   ]);
 

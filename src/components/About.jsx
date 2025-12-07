@@ -11,7 +11,11 @@ export default function About() {
         transition={{ type: "spring", stiffness: 80, damping: 10 }}
         viewport={{ once: true }}
       >
-        <img src="/assets/about-me.svg" alt="About Me Illustration" />
+        <img 
+  className="w-1/3 mx-auto" 
+  src="/assets/about.png" 
+  alt="About Me Illustration" 
+/>
       </motion.div>
 
       <motion.div
@@ -26,16 +30,12 @@ export default function About() {
         </h2>
 
         <p className="text-[#71717A] text-sm/6 lg:text-base mt-5 lg:mt-10">
-          I'm a passionate full-stack developer specializing in **React.js & Node.js**. I thrive on blending technical expertise with sleek UI/UX design to build high-performing, user-friendly applications.
+          I'm a Senior Instructional Designer and self-confessed tech geek with over 15 years of experience turning boring manuals into interactive experiences. I specialize in breaking the limits of standard tools using gamification to supercharge Articulate Storyline 360 and integrating cutting-edge Generative AI workflows (ComfyUI, Gemini, ElevenLabs) to engineer solutions that are as smart as they are visually stunning.
+        </p>
+        <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
+          Think of me as a "Full Stack" creator for learning. I handle everything from the technical side of LMS administration (SCORM/xAPI/Workday) to the creative heavy lifting of video production using Adobe Premiere, Camtasia, and Vyond. I blend proven methodologies like ADDIE and SAM with a gamer’s mindset applying robust gamification mechanics to ensure that learners don't just complete a course, but actually enjoy the experience. 
         </p>
 
-        <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
-          My web development journey started in **2015**, and since then, I've continuously evolved, taking on new challenges and keeping up with the latest technologies. Today, I build **cutting-edge web applications** using **Next.js, TypeScript, NestJS, TailwindCSS, Supabase, and more**.
-        </p>
-
-        <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
-          Beyond coding, I enjoy sharing insights on **Twitter**, engaging with **Indie Hackers**, and following the journey of **early-stage startups**. Feel free to follow me on **Twitter** or check out my projects on **GitHub**.
-        </p>
       </motion.div>
     </div>
   );
