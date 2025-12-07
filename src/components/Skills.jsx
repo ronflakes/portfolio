@@ -109,7 +109,7 @@ export default function Skills() {
       id: 5,
       company: "Boomzap",
       role: "Game Designer",
-      period: "Sep 2013 - JNov 2015",
+      period: "Sep 2013 - Nov 2015",
       description:
         (
   <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">

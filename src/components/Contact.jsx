@@ -79,8 +79,8 @@ export default function Contact() {
           className='lg:w-1/2'
         >
           <div className='font-extrabold text-2xl lg:text-5xl mt-5 lg:mt-0 space-y-1 lg:space-y-3'>
-            <h2>Let's <span className='text-white' style={{ WebkitTextStroke: '1px black' }}>talk</span> for</h2>
-            <h2>Something special</h2>
+            <h2>Let's <span className='text-white' style={{ WebkitTextStroke: '1px black' }}>work</span> on</h2>
+            <h2>Something awesome</h2>
           </div>
 
           <p className='text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-6'>I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
@@ -94,18 +94,18 @@ export default function Contact() {
               <span className='border-2 transition-all border-transparent group-hover:border-black rounded-full p-1'>
                 <IoMdMail className="w-4 h-4 lg:w-5 lg:h-5" />
               </span>
-              Youremail@gmail.com
+              ronflakes@gmail.com
             </motion.a>
 
             <motion.a
               whileHover={{ x: 5 }}
               className='flex items-center gap-2 group'
-              href="tele:1234567890"
+              href="tele:+63 9989723746"
             >
               <span className='border-2 transition-all border-transparent group-hover:border-black rounded-full p-[5px]'>
                 <FaPhone className="w-3 h-3 lg:w-4 lg:h-4" />
               </span>
-              1234567890
+              +63 9989723746
             </motion.a>
           </div>
         </motion.div>

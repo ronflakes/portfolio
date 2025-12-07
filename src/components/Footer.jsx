@@ -6,8 +6,8 @@ export default function Footer() {
       <img className='invert h-5 lg:h-9' src="/assets/logo.png" alt="" />
 
       <div className='text-white lg:font-semibold lg:text-sm font-normal text-[10px] text-right lg:space-y-3'>
-        <p>@ 2025 Personal Portfolio</p>
-        <p>Made by ronflakes</p>
+        <p>@ 2025 Black and White Portfolio</p>
+        <p>Made by Ron Taruc</p>
       </div>
     </div>
   )
