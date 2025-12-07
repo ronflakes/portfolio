@@ -55,7 +55,7 @@ export default function Skills() {
       id: 2,
       company: "Aurecon Australasia Pty Ltd",
       role: "Digital Technologist",
-      period: "Feb 2018 - June 2024",
+      period: "Feb 2018 - Jun 2024",
       description:
         (
   <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">
@@ -73,46 +73,52 @@ export default function Skills() {
       logo: "/assets/aurecon.webp",
     },
         {
-      id: 1,
-      company: "Verizon",
-      role: "Sr Instructional Design Manager",
-      period: "Jul 2024 - present",
+      id: 3,
+      company: "ServiceSource",
+      role: "Instructional Designer",
+      period: "Aug 2016 - Jan 2018",
       description:
         (
   <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">
     <li>
-      Designed and developed high-impact, gamified learning solutions using Articulate Storyline 360 (utilizing custom JavaScript & xAPI) and Rise 360, translating complex technical concepts into engaging simulations.
+      Produced training materials for major tech clients (Dell, Microsoft, Avaya).
     </li>
     <li>
-      Led the end-to-end training lifecycle using ADDIE and SAM models from conducting needs analysis with SMEs to creating detailed SOPs, Facilitator Guides, and Job Aids.
-    </li>
-    <li>
-      Managed stakeholder relationships and learning strategies, while overseeing LMS administration and ensuring all content met universal accessibility and inclusivity standards.
+      Developed gamified web-based training templates.
     </li>
   </ul>
 ),
-      logo: "/assets/v.jpg",
+      logo: "/assets/serv.png",
     },
     {
-      id: 2,
-      company: "Aurecon Australasia Pty Ltd",
-      role: "Digital Technologist",
-      period: "Feb 2018 - June 2024",
+      id: 4,
+      company: "ShareSource",
+      role: "Course Developer",
+      period: "Nov 2015 - Jun 2016",
       description:
         (
   <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">
     <li>
-      Delivered tailored eLearning and multimedia solutions for a global workforce, effectively managing remote collaboration with stakeholders across Australia and Asia.
-    </li>
-    <li>
-      Acted as the primary technical lead for content creation, utilizing Articulate 360, Adobe Creative Cloud, and video production tools to build high-performing training modules.
-    </li>
-    <li>
-      Established strong partnerships with SMEs to translate complex business strategies into interactive digital learning experiences.
+      Led micro-teams for eLearning development and conducted QA reviews on storyboards and final builds.
     </li>
   </ul>
 ),
-      logo: "/assets/aurecon.webp",
+      logo: "/assets/share.jpg",
+    },
+    {
+      id: 5,
+      company: "Boomzap",
+      role: "Game Designer",
+      period: "Sep 2013 - JNov 2015",
+      description:
+        (
+  <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">
+    <li>
+      Designed mechanics and user experience (UX) for PC and mobile games, ensuring seamless player engagement.
+    </li>
+  </ul>
+),
+      logo: "/assets/bz.jpg",
     },
   ]);
 
