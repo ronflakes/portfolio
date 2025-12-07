@@ -3,3 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* When the cursor is over a text element we add this class to invert colors */
+.cursor-invert {
+	filter: invert(1) hue-rotate(180deg);
+	transition: filter 120ms ease;
+}
+
+/* Optional helper: elements with this class will opt-in to the hover inversion */
+.hover-invert {
+	cursor: pointer;
+}

@@ -34,11 +34,11 @@ export default function Home() {
               Hello, <TypeAnimation
                 sequence={[
                   'I am Ron Taruc',
+                  2000,
+                  'I am a Course Developer',
                   1000,
-                  // 'I am a Web Developer',
-                  // 1000,
-                  // 'I am a UI/UX Designer',
-                  // 1000,
+                  'I am a Multimedia Expert',
+                  1000,
                 ]}
                 speed={10}
                 style={{ fontWeight:600 }}
@@ -55,7 +55,7 @@ export default function Home() {
               </span>
             </motion.h2>
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
-              Based In <span className="font-extrabold">Philippines.</span>
+              Based In the <span className="font-extrabold">Philippines.</span>
             </motion.h2>
           </motion.div>
 
@@ -74,27 +74,49 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-            {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => (
-              <motion.a
-                key={index}
-                href="#"
-                className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
-              </motion.a>
-            ))}
-          </motion.div>
+{/* Social Media Links Block */}
+<div className="flex gap-4">
+  {/* 1. GMAIL */}
+  <motion.a
+    href="mailto:ronflakes@gmail.com" // 👈 Palitan ng email mo
+    className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+    whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+    whileTap={{ scale: 0.9 }}
+  >
+    <BiLogoGmail className="w-4 h-4 lg:w-5 lg:h-5" />
+  </motion.a>
+
+  {/* 2. LINKEDIN */}
+  <motion.a
+    href="https://www.linkedin.com/in/rontaruc/" // 👈 Palitan ng LinkedIn URL mo
+    target="_blank"
+    className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+    whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+    whileTap={{ scale: 0.9 }}
+  >
+    <IoLogoLinkedin className="w-4 h-4 lg:w-5 lg:h-5" />
+  </motion.a>
+
+  {/* 3. GITHUB */}
+  <motion.a
+    href="https://github.com/ronflakes" // 👈 Palitan ng GitHub URL mo
+    target="_blank"
+    className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+    whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+    whileTap={{ scale: 0.9 }}
+  >
+    <BsGithub className="w-4 h-4 lg:w-5 lg:h-5" />
+  </motion.a>
+</div>          </motion.div>
         </motion.div>
 
         <motion.div
-          className="lg:w-[55%] w-full"
+          className="lg:w-[50%] w-full"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <img className="h-full w-full" src="/assets/cat.gif" alt="Hero Animation" />
+          <img className="h-full w-full" src="assets/hero.gif" alt="Hero Animation" />
         </motion.div>
       </div>
     </div>

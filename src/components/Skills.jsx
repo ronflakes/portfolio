@@ -7,26 +7,26 @@ import { CgFigma } from "react-icons/cg";
 
 export default function Skills() {
   const [skills] = useState([
-    { id: 1, name: "Articulate 360", icon: <img src="/skills/art.jpg" alt="Articulate" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 2, name: "Premiere Pro", icon: <img src="/skills/pr.png" alt="Premiere Pro" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 3, name: "Photoshop", icon: <img src="/skills/ps.png" alt="Photoshop" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 4, name: "Workday", icon: <img src="/skills/workday.png" alt="Workday" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 5, name: "Pictory", icon: <img src="/skills/pictory.png" alt="Pictory" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 6, name: "Camtasia", icon: <img src="/skills/camtasia.webp" alt="Camtasia" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 7, name: "ComfyUI", icon: <img src="/skills/comfy.webp" alt="ComfyUI" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 8, name: "Captivate", icon: <img src="/skills/captivate.png" alt="Captivate" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 9, name: "Vyond", icon: <img src="/skills/vyond.png" alt="Vyond" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 10, name: "Audacity", icon: <img src="/skills/audacity.png" alt="Audacity" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 11, name: "Canva", icon: <img src="/skills/canva.svg" alt="Canva" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 12, name: "Eleven Labs", icon: <img src="/skills/eleven1.png" alt="Eleven Labs" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 13, name: "WordPress", icon: <img src="/skills/wp.png" alt="WordPress" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 14, name: "Google Gemini", icon: <img src="/skills/gemini.webp" alt="Gemini" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 15, name: "Vegas Pro", icon: <img src="/skills/vegas.png" alt="Vegas Pro" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 11, name: "360 Studio", icon: <img src="/skills/360.png" alt="Insta 360 Studio" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 12, name: "Powtoon", icon: <img src="/skills/Powtoon.webp" alt="Powtoon" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 13, name: "Squarespace", icon: <img src="/skills/ss.webp" alt="Squarespace" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 14, name: "OBS Studio", icon: <img src="/skills/obs.png" alt="OBS Studio" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 15, name: "Office 365", icon: <img src="/skills/ofc.svg" alt="Office 365" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 1, name: "Articulate 360", icon: <img src="skills/art.jpg" alt="Articulate" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 2, name: "Premiere Pro", icon: <img src="skills/pr.png" alt="Premiere Pro" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 3, name: "Photoshop", icon: <img src="skills/ps.png" alt="Photoshop" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 4, name: "Workday", icon: <img src="skills/workday.png" alt="Workday" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 5, name: "Pictory", icon: <img src="skills/pictory.png" alt="Pictory" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 6, name: "Camtasia", icon: <img src="skills/camtasia.webp" alt="Camtasia" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 7, name: "ComfyUI", icon: <img src="skills/comfy.webp" alt="ComfyUI" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 8, name: "Captivate", icon: <img src="skills/captivate.png" alt="Captivate" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 9, name: "Vyond", icon: <img src="skills/vyond.png" alt="Vyond" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 10, name: "Audacity", icon: <img src="skills/audacity.png" alt="Audacity" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 11, name: "Canva", icon: <img src="skills/canva.svg" alt="Canva" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 12, name: "Eleven Labs", icon: <img src="skills/eleven1.png" alt="Eleven Labs" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 13, name: "WordPress", icon: <img src="skills/wp.png" alt="WordPress" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 14, name: "Google Gemini", icon: <img src="skills/gemini.webp" alt="Gemini" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 15, name: "Vegas Pro", icon: <img src="skills/vegas.png" alt="Vegas Pro" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 11, name: "360 Studio", icon: <img src="skills/360.png" alt="Insta 360 Studio" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 12, name: "Powtoon", icon: <img src="skills/Powtoon.webp" alt="Powtoon" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 13, name: "Squarespace", icon: <img src="skills/ss.webp" alt="Squarespace" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 14, name: "OBS Studio", icon: <img src="skills/obs.png" alt="OBS Studio" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 15, name: "Office 365", icon: <img src="skills/ofc.svg" alt="Office 365" style={{ width: '75px', height: 'auto' }} /> },
   ]);
 
   const [experiences] = useState([
@@ -49,7 +49,7 @@ export default function Skills() {
     </li>
   </ul>
 ),
-      logo: "/assets/v.jpg",
+      logo: "assets/v.jpg",
     },
     {
       id: 2,
@@ -70,7 +70,7 @@ export default function Skills() {
     </li>
   </ul>
 ),
-      logo: "/assets/aurecon.webp",
+      logo: "assets/aurecon.webp",
     },
         {
       id: 3,
@@ -81,14 +81,17 @@ export default function Skills() {
         (
   <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">
     <li>
-      Produced training materials for major tech clients (Dell, Microsoft, Avaya).
+      Produced training materials for major tech clients.
     </li>
     <li>
       Developed gamified web-based training templates.
     </li>
+    <li>
+      Developed high-impact complex product training for specialized service lines.
+    </li>
   </ul>
 ),
-      logo: "/assets/serv.png",
+      logo: "assets/serv.png",
     },
     {
       id: 4,
@@ -101,9 +104,15 @@ export default function Skills() {
     <li>
       Led micro-teams for eLearning development and conducted QA reviews on storyboards and final builds.
     </li>
+     <li>
+      Provided multimedia support including video editing and graphic design for course content.
+    </li>
+     <li>
+      Developed interactive tool walkthroughs and simulations.
+    </li>
   </ul>
 ),
-      logo: "/assets/share.jpg",
+      logo: "assets/share.jpg",
     },
     {
       id: 5,
@@ -114,12 +123,38 @@ export default function Skills() {
         (
   <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">
     <li>
+      Demonstrated rapid career progression, evolving from <b>Game Tester</b> to <b>Assistant Designer</b>, and ultimately <b>Head Designer</b>, shaping the narrative and mechanics of successful casual game titles.
+    </li>
+     <li>
       Designed mechanics and user experience (UX) for PC and mobile games, ensuring seamless player engagement.
+    </li>
+     <li>
+      Spearheaded the technical <b>migration and porting</b> of legacy PC games to mobile platforms (iOS/Android), optimizing UI/UX for touch interfaces and ensuring seamless cross-platform performance.
     </li>
   </ul>
 ),
-      logo: "/assets/bz.jpg",
+      logo: "assets/bz.jpg",
     },
+    {
+  id: 3, // Siguraduhin na sunod na number ito
+  company: "BPO & Media Companies",
+  role: "Early Career Roles ",
+  period: "Previous Experience", // O kaya ilagay mo taon "20xx - 20xx"
+  description: (
+    <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">
+      <li>
+        Rapid career progression starting from <b>Technical Support</b>, advancing to <b>Quality Assurance (QA)</b>, and transitioning into <b>Corporate Trainer</b> roles.
+      </li>
+      <li>
+        Provided expert support and training for top-tier global brands including <b>World Vision, eBay, Honeywell, Blackboard,</b> and <b>GMA7 Network</b>.
+      </li>
+      <li>
+        Built a strong technical foundation in software troubleshooting (Microsoft Xbox/Cisco) which paved the way for specialized Technical Instructional Design work.
+      </li>
+    </ul>
+  ),
+  logo: "assets/favicon.png", // Hanap ka lang ng generic icon o kahit wala na
+},
   ]);
 
   return (
