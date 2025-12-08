@@ -16,7 +16,7 @@ export default function PasswordGate({ children }) {
     }
   }, [])
 
-  const PASSWORD = 'ronflake$' // provided by owner
+  const PASSWORD = '123' // provided by owner
 
   const submit = (e) => {
     e.preventDefault()
@@ -34,7 +34,7 @@ export default function PasswordGate({ children }) {
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 text-white">
       <div className="w-full max-w-md mx-4 bg-white/5 p-8 rounded-md backdrop-blur-sm">
-        <h2 className="text-2xl font-bold mb-4">Enter password to view portfolio</h2>
+        <h2 className="text-2xl font-bold mb-4 text-center">Enter password to proceed</h2>
         <form onSubmit={submit} className="flex flex-col gap-3">
           <input
             type="password"
@@ -45,9 +45,9 @@ export default function PasswordGate({ children }) {
             autoFocus
           />
           <button className="px-4 py-2 bg-white text-black rounded font-semibold" type="submit">Unlock</button>
-          {error && <div className="text-red-400">{error}</div>}
+          {error && <div className="text-red-400 text-center">{error}</div>}
         </form>
-        <p className="text-xs text-white/60 mt-4">If you forget the password ask the site owner.</p>
+        <p className="text-xs text-white/60 mt-4 text-center">If you forgot the password ask the site owner.</p>
       </div>
     </div>
   )
