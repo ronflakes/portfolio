@@ -10,7 +10,7 @@ const projects = [
     image: "assets/vzone-preview.mp4",
     videoSrc: "assets/vzone-preview.mp4",
     link: "#",
-    previewUrl: "courses/ronzone/index.html?cmi5Expiry=2099-01-01&ResetData=True",
+    previewUrl: "https://ronflakes.github.io/courses/ronmon_demo/index.html",
     isPreview: true,
     details: "The main hurdle was that Articulate Storyline is an authoring tool, not a game engine. Implementing complex mechanics like an Inventory System, Turn-Based Combat, and Boss AI required pushing the software far beyond its intended limits. I treated the slide deck like a software application, building a web of advanced variables to track Health Points (HP), Experience (XP), and Inventory items globally across the course. To bridge the gap between Storyline's limitations and game logic, I wrote custom JavaScript to handle dynamic calculations, such as damage computation during \"battles,\" and UI updates that native triggers couldn't handle. I also designed \"Boss Battles\" where answering questions correctly deals damage to the enemy, effectively turning standard assessments into high-stakes encounters.\n\nThis project set a new standard for what our team can deliver, proving that high-fidelity gaming experiences are possible within standard eLearning tools without needing Unity or Unreal Engine. It provided the development team with a scalable, plug-and-play template that significantly reduced build time for future gamified projects. Most importantly, it transformed the \"grind\" of learning into a quest users reported that the drive to collect items and defeat bosses made them eagerly consume content they would usually skim."
   },
@@ -121,19 +121,19 @@ export default function Projects() {
         My <span className="font-extrabold">Projects</span>
       </h2>
 
-      <div className="lg:mt-16 mt-8 lg:space-y-16 space-y-8 lg:pb-6 pb-3">
+      <div className="lg:mt-16 mt-8 grid gap-8 lg:gap-10 lg:grid-cols-3 lg:pb-6 pb-3">
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
-            className="flex justify-between items-center flex-col lg:flex-row"
+            className="bg-white/5 rounded-2xl border border-white/10 backdrop-blur-sm p-4 flex flex-col gap-4"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 80, damping: 10, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="lg:w-2/5 w-full rounded-2xl overflow-hidden">
+            <div className="w-full h-96 rounded-xl overflow-hidden">
               <video
-                className="w-full h-full hover:scale-105 transition-all duration-500 cursor-pointer object-cover"
+                className="w-full h-full object-cover hover:scale-105 transition-all duration-500 cursor-pointer"
                 src={project.videoSrc}
                 onClick={() => openProject(project)}
                 autoPlay
@@ -144,19 +144,19 @@ export default function Projects() {
               />
             </div>
 
-            <div className="lg:w-3/5 lg:space-y-6 space-y-4 lg:pl-20">
-              <h2 className="font-extrabold text-white mt-5 lg:mt-0 text-3xl lg:text-5xl">
+            <div className="space-y-3">
+              <h2 className="font-extrabold text-white text-3xl">
                 {String(project.id).padStart(2, "0")}
               </h2>
-              <p className="font-bold text-white text-xl lg:text-3xl">{project.title}</p>
+              <p className="font-bold text-white text-xl lg:text-2xl">{project.title}</p>
 
               <p className="font-light text-sm/6 lg:text-base text-[#71717A]">
-                {project.description}
+                {project.description.split('\n')[0]}
               </p>
               {project.link === '#' ? (
                 <button
                   onClick={() => openProject(project)}
-                  className="text-white mt-3 block"
+                  className="text-white mt-1 block"
                   aria-label={`Open ${project.title} details`}
                 >
                   <TbExternalLink size={23} />

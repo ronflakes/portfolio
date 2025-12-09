@@ -7,26 +7,26 @@ import { CgFigma } from "react-icons/cg";
 
 export default function Skills() {
   const [skills] = useState([
-    { id: 1, name: "Articulate 360", icon: <img src="skills/art.jpg" alt="Articulate" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 2, name: "Premiere Pro", icon: <img src="skills/pr.png" alt="Premiere Pro" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 3, name: "Photoshop", icon: <img src="skills/ps.png" alt="Photoshop" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 4, name: "Workday", icon: <img src="skills/workday.png" alt="Workday" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 5, name: "Pictory", icon: <img src="skills/pictory.png" alt="Pictory" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 6, name: "Camtasia", icon: <img src="skills/camtasia.webp" alt="Camtasia" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 7, name: "ComfyUI", icon: <img src="skills/comfy.webp" alt="ComfyUI" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 8, name: "Captivate", icon: <img src="skills/captivate.png" alt="Captivate" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 9, name: "Vyond", icon: <img src="skills/vyond.png" alt="Vyond" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 10, name: "Audacity", icon: <img src="skills/audacity.png" alt="Audacity" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 11, name: "Canva", icon: <img src="skills/canva.svg" alt="Canva" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 12, name: "Eleven Labs", icon: <img src="skills/eleven1.png" alt="Eleven Labs" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 13, name: "WordPress", icon: <img src="skills/wp.png" alt="WordPress" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 14, name: "Google Gemini", icon: <img src="skills/gemini.webp" alt="Gemini" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 15, name: "Vegas Pro", icon: <img src="skills/vegas.png" alt="Vegas Pro" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 11, name: "360 Studio", icon: <img src="skills/360.png" alt="Insta 360 Studio" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 12, name: "Powtoon", icon: <img src="skills/Powtoon.webp" alt="Powtoon" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 13, name: "Squarespace", icon: <img src="skills/ss.webp" alt="Squarespace" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 14, name: "OBS Studio", icon: <img src="skills/obs.png" alt="OBS Studio" style={{ width: '75px', height: 'auto' }} /> },
-    { id: 15, name: "Office 365", icon: <img src="skills/ofc.svg" alt="Office 365" style={{ width: '75px', height: 'auto' }} /> },
+    { id: 1, name: "Articulate 360", icon: <img src="skills/art.jpg" alt="Articulate" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 2, name: "Premiere Pro", icon: <img src="skills/pr.png" alt="Premiere Pro" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 3, name: "Photoshop", icon: <img src="skills/ps.png" alt="Photoshop" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 4, name: "Workday", icon: <img src="skills/workday.png" alt="Workday" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 5, name: "Pictory", icon: <img src="skills/pictory.png" alt="Pictory" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 6, name: "Camtasia", icon: <img src="skills/camtasia.webp" alt="Camtasia" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 7, name: "ComfyUI", icon: <img src="skills/comfy.webp" alt="ComfyUI" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 8, name: "Captivate", icon: <img src="skills/captivate.png" alt="Captivate" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 9, name: "Vyond", icon: <img src="skills/vyond.png" alt="Vyond" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 10, name: "Audacity", icon: <img src="skills/audacity.png" alt="Audacity" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 11, name: "Canva", icon: <img src="skills/canva.svg" alt="Canva" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 12, name: "Eleven Labs", icon: <img src="skills/eleven1.png" alt="Eleven Labs" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 13, name: "WordPress", icon: <img src="skills/wp.png" alt="WordPress" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 14, name: "Google Gemini", icon: <img src="skills/gemini.webp" alt="Gemini" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 15, name: "Vegas Pro", icon: <img src="skills/vegas.png" alt="Vegas Pro" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 16, name: "360 Studio", icon: <img src="skills/360.png" alt="Insta 360 Studio" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 17, name: "Powtoon", icon: <img src="skills/Powtoon.webp" alt="Powtoon" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 18, name: "Squarespace", icon: <img src="skills/ss.webp" alt="Squarespace" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 19, name: "OBS Studio", icon: <img src="skills/obs.png" alt="OBS Studio" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 20, name: "Office 365", icon: <img src="skills/ofc.svg" alt="Office 365" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
   ]);
 
   const [experiences] = useState([
@@ -172,18 +172,20 @@ export default function Skills() {
         </motion.h2>
 
         {/* Skill Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 text-lg font-bold mt-7 lg:mt-16 w-full place-items-center gap-y-6 lg:gap-y-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-5 text-sm sm:text-base lg:text-lg font-bold mt-7 lg:mt-16 w-full place-items-center gap-y-4 sm:gap-y-6 lg:gap-y-12">
           {skills.map((skill) => (
             <motion.div
               key={skill.id}
-              className="bg-white border-2 hover:bg-black hover:text-white transition-all cursor-pointer border-black rounded p-3 h-36 w-36 lg:h-44 lg:w-44 flex flex-col items-center justify-center gap-5"
+              className="bg-white border-2 hover:bg-black hover:text-white transition-all cursor-pointer border-black rounded p-2 sm:p-3 h-28 w-28 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-44 lg:w-44 flex flex-col items-center justify-center gap-2 sm:gap-3 lg:gap-5"
               initial={{ opacity: 0, y: 5 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: skill.id * 0.1 }}
               viewport={{ once: true }}
             >
-              {skill.icon}
-              <p>{skill.name}</p>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center">
+                {skill.icon}
+              </div>
+              <p className="text-center text-xs sm:text-sm lg:text-base leading-tight">{skill.name}</p>
             </motion.div>
           ))}
         </div>

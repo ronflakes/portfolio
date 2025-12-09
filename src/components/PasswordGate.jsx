@@ -16,7 +16,7 @@ export default function PasswordGate({ children }) {
     }
   }, [])
 
-  const PASSWORD = '123' // provided by owner
+  const PASSWORD = '000' // provided by owner
 
   const submit = (e) => {
     e.preventDefault()
