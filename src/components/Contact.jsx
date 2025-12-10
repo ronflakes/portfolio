@@ -11,20 +11,26 @@ export default function Contact() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
-  // 👇 1. ETO YUNG BAGONG FUNCTION PARA HINDI MAG-RELOAD
   const handleSubmit = (e) => {
-    e.preventDefault(); // Ito ang pumipigil sa refresh
+    e.preventDefault();
     
-    // Kinukuha natin yung values sa input
-    const name = e.target[0].value;
-    const email = e.target[1].value;
-    const website = e.target[2].value;
-    const message = e.target[3].value;
+    const formData = {
+      name: e.target[0].value,
+      email: e.target[1].value,
+      website: e.target[2].value,
+      message: e.target[3].value,
+    };
 
-    // Bubuo tayo ng email link automatically
-    const mailtoLink = `mailto:ronflakes@gmail.com?subject=Portfolio Inquiry from ${name}&body=Hi Ron,%0D%0A%0D%0A${message}%0D%0A%0D%0AFrom: ${name}%0D%0AEmail: ${email}%0D%0AWebsite: ${website}`;
+    // Track form attempt
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('event', 'contact_attempt', {
+        event_category: 'Contact',
+        event_label: 'Contact Form Mailto',
+      });
+    }
 
-    // Bubuksan ang email app ng user
+    // Open mailto link
+    const mailtoLink = `mailto:ronflakes@gmail.com?subject=Portfolio Inquiry from ${encodeURIComponent(formData.name)}&body=Hi Ron,%0D%0A%0D%0A${encodeURIComponent(formData.message)}%0D%0A%0D%0AFrom: ${encodeURIComponent(formData.name)}%0D%0AEmail: ${encodeURIComponent(formData.email)}%0D%0AWebsite: ${encodeURIComponent(formData.website)}`;
     window.location.href = mailtoLink;
   };
 
@@ -90,40 +96,44 @@ export default function Contact() {
               >
                 <TbDownload size={18} /> Resume
               </motion.a>
+            </motion.div>
+          </form>
+        </motion.div>
 
-              <div className='flex items-center gap-x-2 lg:gap-x-5'>
-                {/* 1. GMAIL */}
-                <motion.a
-                  href="mailto:ronflakes@gmail.com"
-                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <BiLogoGmail className="w-4 h-4 lg:w-5 lg:h-5" />
-                </motion.a>
+        <motion.div
+              className='flex items-center gap-x-2 lg:gap-x-5 mt-4'
+            >
+              {/* 1. GMAIL */}
+              <motion.a
+                href="mailto:ronflakes@gmail.com"
+                className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+                whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <BiLogoGmail className="w-4 h-4 lg:w-5 lg:h-5" />
+              </motion.a>
 
-                {/* 2. LINKEDIN */}
-                <motion.a
-                  href="https://www.linkedin.com/in/rontaruc/"
-                  target="_blank"
-                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <IoLogoLinkedin className="w-4 h-4 lg:w-5 lg:h-5" />
-                </motion.a>
+              {/* 2. LINKEDIN */}
+              <motion.a
+                href="https://www.linkedin.com/in/rontaruc/"
+                target="_blank"
+                className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+                whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <IoLogoLinkedin className="w-4 h-4 lg:w-5 lg:h-5" />
+              </motion.a>
 
-                {/* 3. GITHUB */}
-                <motion.a
-                  href="https://github.com/ronflakes"
-                  target="_blank"
-                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <BsGithub className="w-4 h-4 lg:w-5 lg:h-5" />
-                </motion.a>
-              </div>
+              {/* 3. GITHUB */}
+              <motion.a
+                href="https://github.com/ronflakes"
+                target="_blank"
+                className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+                whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <BsGithub className="w-4 h-4 lg:w-5 lg:h-5" />
+              </motion.a>
             </motion.div>
           </form>
         </motion.div>

@@ -312,7 +312,21 @@ export default function Projects() {
                     </div>
                   )}
                   <div className="flex items-center gap-3 mt-6">
-                    <a href={selected.courseUrl} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-600 text-white rounded flex items-center gap-2">
+                    <a 
+                      href={selected.courseUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="px-4 py-2 bg-blue-600 text-white rounded flex items-center gap-2"
+                      onClick={() => {
+                        if (typeof window.gtag !== 'undefined') {
+                          window.gtag('event', 'preview_launch', {
+                            event_category: 'Projects',
+                            event_label: selected.title,
+                            project_id: selected.id
+                          });
+                        }
+                      }}
+                    >
                       View Full Course <TbExternalLink />
                     </a>
                     <button onClick={() => setSelected(null)} className="px-4 py-2 bg-black text-white rounded">Close</button>
@@ -335,7 +349,21 @@ export default function Projects() {
                     </div>
                   )}
                   <div className="flex items-center gap-3 mt-6">
-                    <a href={selected.previewUrl} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-600 text-white rounded flex items-center gap-2">
+                    <a 
+                      href={selected.previewUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="px-4 py-2 bg-blue-600 text-white rounded flex items-center gap-2"
+                      onClick={() => {
+                        if (typeof window.gtag !== 'undefined') {
+                          window.gtag('event', 'preview_launch', {
+                            event_category: 'Projects',
+                            event_label: selected.title,
+                            project_id: selected.id
+                          });
+                        }
+                      }}
+                    >
                       View Full Preview <TbExternalLink />
                     </a>
                     <button onClick={() => setSelected(null)} className="px-4 py-2 bg-black text-white rounded">Close</button>

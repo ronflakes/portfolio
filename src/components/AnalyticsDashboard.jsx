@@ -91,25 +91,42 @@ export default function AnalyticsDashboard({ isOpen, onClose }) {
             </div>
           </div>
 
-          {/* Quick Stats */}
+          {/* Tracking Events */}
           <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
             <h3 className="font-semibold text-gray-700 mb-4 flex items-center gap-2">
-              <span>🎯</span> Tracking Events
+              <span>🎯</span> Active Tracking Events
             </h3>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                Project views tracked
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                Resume downloads tracked
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                Page navigation tracked
-              </li>
-            </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+              <div className="space-y-2">
+                <p className="font-semibold text-gray-800">Project Interactions:</p>
+                <ul className="space-y-1 text-gray-600">
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                    Lightbox opens (project_view)
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                    Preview launches (preview_launch)
+                  </li>
+                </ul>
+              </div>
+              <div className="space-y-2">
+                <p className="font-semibold text-gray-800">Conversions:</p>
+                <ul className="space-y-1 text-gray-600">
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                    Contact form attempts
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+                    Resume downloads
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-xs text-gray-500 mt-4 border-t pt-3">
+              💡 View detailed breakdown of each event in your Google Analytics dashboard
+            </p>
           </div>
 
           {/* Footer Note */}
