@@ -11,6 +11,7 @@ const companies = [
   { name: "eBay", logo: "assets/EBay_logo.svg.png" },
   { name: "Electronic Arts", logo: "assets/EA_logo_black.png" },
   { name: "GMA 7", logo: "assets/GMA_Network_Logo_Vector.svg.png" },
+  { name: "Honeywell", logo: "assets/Honeywell_logo.svg.png" },
   { name: "Ivoclar", logo: "assets/ivoclar logo.jpg" },
   { name: "Kumu", logo: "assets/kumu logo.png" },
   { name: "McAfee", logo: "assets/mcafee-patch-dearbytes-14.png" },
