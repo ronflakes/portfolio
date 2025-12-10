@@ -54,7 +54,7 @@ const projects = [
     image: "assets/eeo preview.mp4",
     videoSrc: "assets/eeo preview.mp4",
     link: "#",
-    previewUrl: "https://ronflakes.github.io/courses/eeo_demo/story.html",
+    previewUrl: "https://ronflakes.github.io/courses/au%20eeo%20demo%20-%20Storyline%20output/story.html",
     isPreview: true,
     details: "Topics like sexual harassment are traditionally heavy, uncomfortable, and difficult to teach without putting learners on the defensive. The challenge was to strike a delicate balance: making the content \"light\" enough to be approachable, yet serious enough to drive behavioral change. I needed to create a safe learning environment where employees could explore these sensitive issues objectively, rather than feeling lectured or accused.\n\nTo achieve this, I split the experience into two creative phases. First, I utilized Aurecon's branded illustrations to create an \"Opening Gallery\" scene. By presenting each case as a painting in an art exhibit, I used cartoonish yet effective visuals to soften the immediate impact of the topic while clearly displaying the offenses.\n\nFor the second phase, I gamified the application by casting the learner as a Detective. Instead of just answering quizzes, users \"solved cases\" based on the gallery exhibits, analyzing scenarios to decide the correct course of action in tight situations. I implemented a Ranked Progression System where learners leveled up from \"Novice\" to \"Expert\" as they solved more cases. This \"playful yet serious\" approach significantly increased engagement, transforming a dreaded compliance topic into a motivating challenge of investigative skill."
   },
@@ -76,7 +76,7 @@ const projects = [
     image: "assets/safe-preview.mp4",
     videoSrc: "assets/safe-preview.mp4",
     link: "#",
-    previewUrl: "https://ronflakes.github.io/courses/safe_design_demo/story.html",
+    previewUrl: "https://ronflakes.github.io/courses/au%20safe%20demo%20-%20Storyline%20output/story.html",
     isPreview: true,
     details: "Safe Design is a highly technical topic that revolves around critical safety engineering, often resulting in dense, text-heavy training materials that are difficult to digest. The challenge was to take this serious subject matter and make it \"easy on the eyes\" without diluting the importance of the content. My goal was to break down complex technical concepts into accessible visuals, injecting a sense of lightheartedness to keep the learning experience approachable while respecting the seriousness of safety standards.\n\nTo counter the heavy cognitive load, I opted for a motion-first approach. I utilized Vyond to create animated scenarios that \"show\" rather than \"tell,\" allowing learners to visualize safety hazards and solutions in a relatable context.\n\nI purposefully moved away from static slides, using moving graphics and animations in every section to maintain high energy and dynamic fluidity. By ensuring there was movement on screen, I kept the visual pacing active, which prevented the content from feeling stale. This strategy effectively simplified the technical data, keeping learner retention high by turning a dry engineering topic into an engaging, visual narrative."
   },
