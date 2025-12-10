@@ -14,10 +14,6 @@ import PasswordGate from './components/PasswordGate'
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [darkMode, setDarkMode] = useState(() => {
-    const saved = localStorage.getItem('darkMode');
-    return saved ? JSON.parse(saved) : false;
-  });
 
   useEffect(() => {
     const handleContextMenu = (e) => {
@@ -27,24 +23,15 @@ export default function App() {
     return () => document.removeEventListener('contextmenu', handleContextMenu);
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem('darkMode', JSON.stringify(darkMode));
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
-
   return (
     <AnimatePresence mode="wait">
       {isLoading ? (
         <LoadingScreen key="loading" onLoadingComplete={() => setIsLoading(false)} />
       ) : (
-        <div key="content" className='font-sora scroll-smooth overflow-x-hidden bg-white dark:bg-gray-900 transition-colors duration-300'>
+        <div key="content" className='font-sora scroll-smooth overflow-x-hidden'>
           <ScrollProgress />
           <CustomCursor/>
-          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Navbar />
           <Home />
           <Skills />
           <About />

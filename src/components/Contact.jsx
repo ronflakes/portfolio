@@ -171,8 +171,6 @@ export default function Contact() {
                 <TbDownload size={18} /> Resume
               </motion.a>
             </motion.div>
-          </form>
-        </motion.div>
 
             <motion.div
               className='flex items-center gap-x-2 lg:gap-x-5 mt-4'
@@ -187,7 +185,9 @@ export default function Contact() {
                 title="Copy email to clipboard"
               >
                 <BiLogoGmail className="w-4 h-4 lg:w-5 lg:h-5" />
-              </motion.button>              {/* 2. LINKEDIN */}
+              </motion.button>
+
+              {/* 2. LINKEDIN */}
               <motion.a
                 href="https://www.linkedin.com/in/rontaruc/"
                 target="_blank"
