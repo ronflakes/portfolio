@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TbDownload } from "react-icons/tb";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
+import AnalyticsDashboard from "./AnalyticsDashboard";
 
 export default function Navbar() {
   const [hasShadow, setHasShadow] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [showAnalytics, setShowAnalytics] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,9 +42,11 @@ export default function Navbar() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => scrollToSection("home")}
+          onDoubleClick={() => setShowAnalytics(true)}
           className="h-9 cursor-pointer"
           src="assets/logo.png"
           alt="Logo"
+          title="Double-click for analytics"
         />
 
         <ul className="hidden lg:flex items-center gap-x-7 font-semibold">
@@ -136,6 +140,9 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Secret Analytics Dashboard */}
+      <AnalyticsDashboard isOpen={showAnalytics} onClose={() => setShowAnalytics(false)} />
     </motion.nav>
   );
 }
