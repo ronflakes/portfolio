@@ -182,6 +182,15 @@ export default function Projects() {
   }, []);
 
   const openProject = (project) => {
+    // Track project view in Google Analytics
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('event', 'project_view', {
+        event_category: 'Projects',
+        event_label: project.title,
+        project_id: project.id
+      });
+    }
+
     if (project.isCourse) {
       try {
         // Remove probable Storyline/Articulate resume keys from localStorage

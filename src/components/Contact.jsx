@@ -5,6 +5,7 @@ import { BsGithub } from 'react-icons/bs';
 import { IoLogoLinkedin } from 'react-icons/io5';
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
+import { TbDownload } from "react-icons/tb";
 
 export default function Contact() {
   const ref = useRef(null);
@@ -58,7 +59,6 @@ export default function Contact() {
             <input className='border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full' type="email" placeholder='Email' required />
             <input className='border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full' type="text" placeholder='Your website (If exists)' />
             <textarea className='resize-none border-2 px-5 py-3 h-32 border-black placeholder:text-[#71717A]  rounded text-sm w-full' placeholder='How can I help?*' required></textarea>
-
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0 }}
@@ -72,6 +72,24 @@ export default function Contact() {
               >
                 Get In Touch
               </motion.button>
+
+              <motion.a
+                href="Ron Taruc CV 2025.pdf"
+                target="_blank"
+                download
+                whileHover={{ scale: 1.05 }}
+                className='bg-white border-2 border-black justify-center w-fit lg:w-auto lg:flex-1 hover:shadow-lg text-black px-3 py-2 rounded flex items-center gap-x-3 font-medium'
+                onClick={() => {
+                  if (typeof window.gtag !== 'undefined') {
+                    window.gtag('event', 'resume_download', {
+                      event_category: 'Downloads',
+                      event_label: 'Resume from Contact'
+                    });
+                  }
+                }}
+              >
+                <TbDownload size={18} /> Resume
+              </motion.a>
 
               <div className='flex items-center gap-x-2 lg:gap-x-5'>
                 {/* 1. GMAIL */}
