@@ -33,8 +33,8 @@ export default function App() {
           <CustomCursor/>
           <Navbar />
           <Home />
-          <Skills />
           <About />
+          <Skills />
           <Projects />
           <Contact />
           <Footer />

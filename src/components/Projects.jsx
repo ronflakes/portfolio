@@ -218,8 +218,8 @@ export default function Projects() {
   };
 
   return (
-    <div className="bg-black px-5 lg:px-28 py-8 my-8 lg:py-16 lg:my-16" id="projects">
-      <h2 className="text-2xl lg:text-4xl text-center text-white">
+    <div className="bg-white px-5 lg:px-28 py-8 my-8 lg:py-16 lg:my-16" id="projects">
+      <h2 className="text-2xl lg:text-4xl text-center text-black">
         My <span className="font-extrabold">Projects</span>
       </h2>
 
@@ -227,7 +227,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
-            className="bg-white/5 rounded-2xl border border-white/10 backdrop-blur-sm p-4 flex flex-col gap-4"
+            className="bg-black rounded-2xl border border-gray-800 p-4 flex flex-col gap-4"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 80, damping: 10, delay: index * 0.2 }}
@@ -252,7 +252,7 @@ export default function Projects() {
               </h2>
               <p className="font-bold text-white text-xl lg:text-2xl">{project.title}</p>
 
-              <p className="font-light text-sm/6 lg:text-base text-[#71717A]">
+              <p className="font-light text-sm/6 lg:text-base text-gray-300">
                 {project.description.split('\n')[0]}
               </p>
               {project.link === '#' ? (

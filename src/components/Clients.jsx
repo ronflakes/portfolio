@@ -30,7 +30,7 @@ const clients = [
 
 export default function Clients() {
   return (
-    <div className="bg-white px-5 lg:px-28 py-12 lg:py-20">
+    <div id="experience" className="bg-white px-5 lg:px-28 py-12 lg:py-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
