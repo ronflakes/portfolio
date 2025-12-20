@@ -10,7 +10,7 @@ const projects = [
     image: "assets/vzone-preview.mp4",
     videoSrc: "assets/vzone-preview.mp4",
     link: "#",
-    previewUrl: "https://ronflakes.github.io/courses/ronmon_demo/index.html",
+    previewUrl: "https://ronflakes.github.io/courses/ronmon/index.html",
     isPreview: true,
     details: "It started with a casual wish from a Senior Developer who wondered, \"Wouldn't it be cool if we had a truly gamified experience?\" Challenge accepted. Drawing inspiration from classics like Pokémon and typical RPGs, I set out to build something beyond a simple point-and-click course. The goal was to create a comprehensive, end-to-end \"Game Template\" that other developers could use - a robust framework complete with progression systems, combat, puzzles, and boss battles designed to make the learning process not just bearable, but genuinely rewarding.\n\nTo pull this off, I pushed Articulate Storyline to its absolute limits, utilizing complex variable structures and custom JavaScript to engineer the \"bells and whistles\" of a true RPG. The template features map-based exploration where learners gain both in-game experience (XP) and actual knowledge as they progress.\n\nA key feature I introduced is the \"Knowledge Hub.\" Instead of boring handouts, learners \"loot\" or collect information in the form of in-game Books, which are stored in their personal inventory to be read anytime. This mechanic creates a sense of ownership and accomplishment transforming content consumption into a treasure hunt. This project stands as a proof-of-concept for the community, hoping to spark inspiration in other developers to break the mold and try a completely different, enjoyable approach to eLearning."
   },

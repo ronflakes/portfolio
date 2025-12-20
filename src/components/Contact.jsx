@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { BiLogoGmail } from 'react-icons/bi';
-import { BsGithub } from 'react-icons/bs';
 import { IoLogoLinkedin } from 'react-icons/io5';
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
@@ -196,17 +195,6 @@ export default function Contact() {
                 whileTap={{ scale: 0.9 }}
               >
                 <IoLogoLinkedin className="w-4 h-4 lg:w-5 lg:h-5" />
-              </motion.a>
-
-              {/* 3. GITHUB */}
-              <motion.a
-                href="https://github.com/ronflakes"
-                target="_blank"
-                className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <BsGithub className="w-4 h-4 lg:w-5 lg:h-5" />
               </motion.a>
             </motion.div>
           </form>
