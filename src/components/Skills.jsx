@@ -34,7 +34,7 @@ export default function Skills() {
       id: 1,
       company: "Verizon",
       role: "Sr Instructional Design Manager",
-      period: "Jul 2024 - present",
+      period: "Jul 2024 - Dec 2025",
       description:
         (
   <ul className="list-disc ml-5 space-y-2 text-left text-sm lg:text-base">
