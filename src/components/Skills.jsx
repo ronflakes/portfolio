@@ -14,7 +14,7 @@ export default function Skills() {
     { id: 5, name: "Pictory", icon: <img src="skills/pictory.png" alt="Pictory" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
     { id: 6, name: "Camtasia", icon: <img src="skills/camtasia.webp" alt="Camtasia" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
     { id: 7, name: "ComfyUI", icon: <img src="skills/comfy.webp" alt="ComfyUI" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 8, name: "Captivate", icon: <img src="skills/captivate.png" alt="Captivate" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    { id: 8, name: "Synthesia", icon: <img src="skills/synthesia.png" alt="Synthesia" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
     { id: 9, name: "Vyond", icon: <img src="skills/vyond.png" alt="Vyond" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
     { id: 10, name: "Audacity", icon: <img src="skills/audacity.png" alt="Audacity" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
     { id: 11, name: "Canva", icon: <img src="skills/canva.svg" alt="Canva" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
