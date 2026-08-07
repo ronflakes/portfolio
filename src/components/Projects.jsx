@@ -5,17 +5,6 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     id: 1,
-    title: "The RPG Learning Engine",
-    description: "The RPG Learning Engine: A fully functional, Pokémon-inspired game template featuring turn-based combat, exploration maps, and collectibles built to prove that Storyline 360 can run a full-scale RPG (Role Playing Game) experience.",
-    image: "assets/vzone-preview.mp4",
-    videoSrc: "assets/vzone-preview.mp4",
-    link: "#",
-    previewUrl: "https://ronflakes.github.io/courses/ronmon/index.html",
-    isPreview: true,
-    details: "It started with a casual wish from a Senior Developer who wondered, \"Wouldn't it be cool if we had a truly gamified experience?\" Challenge accepted. Drawing inspiration from classics like Pokémon and typical RPGs, I set out to build something beyond a simple point-and-click course. The goal was to create a comprehensive, end-to-end \"Game Template\" that other developers could use - a robust framework complete with progression systems, combat, puzzles, and boss battles designed to make the learning process not just bearable, but genuinely rewarding.\n\nTo pull this off, I pushed Articulate Storyline to its absolute limits, utilizing complex variable structures and custom JavaScript to engineer the \"bells and whistles\" of a true RPG. The template features map-based exploration where learners gain both in-game experience (XP) and actual knowledge as they progress.\n\nA key feature I introduced is the \"Knowledge Hub.\" Instead of boring handouts, learners \"loot\" or collect information in the form of in-game Books, which are stored in their personal inventory to be read anytime. This mechanic creates a sense of ownership and accomplishment transforming content consumption into a treasure hunt. This project stands as a proof-of-concept for the community, hoping to spark inspiration in other developers to break the mold and try a completely different, enjoyable approach to eLearning."
-  },
-  {
-    id: 2,
     title: "A Cinematic Choose Your Own Story",
     description: "A high-fidelity interactive movie that puts the learner in the driver's seat, blending professional video production with complex Storyline 360 branching to simulate critical real-world decisions.",
     image: "assets/collapse-preview.mp4",
@@ -24,6 +13,17 @@ const projects = [
     previewUrl: "https://360.articulate.com/review/content/79da8dcb-5381-4bf0-b14c-a62810ea7fbb/review",
     isPreview: true,
     details: "The Risk Management team provided high-level video production assets with a vision to teach compliance in a very creative manner. They did an awesome job producing the raw footage, so it was only right that I transformed their work into an engaging and unique presentation. The goal was to move away from static slides and create a \"Choose Your Own Adventure\" experience where learners aren't just watching, they are deciding the outcome in a cinematic environment with multiple endings, both good and bad.\n\nThis project was a true 50/50 split between post-production and instructional design. I utilized my Adobe Premiere Pro skills to fine-tune and color-grade the raw videos, ensuring visual consistency before importing them into the authoring tool. Inside Articulate Storyline 360, I built a sophisticated logic structure to map out the branching narrative, ensuring the video transitions felt seamless despite the complex decision trees running in the background.\n\nThe result is a seamless fusion of multimedia art and instructional technology. The multi-ending format encouraged learners to replay the course voluntarily to see different outcomes, successfully turning a mandatory risk management training into an exciting, replayable interactive film."
+  },
+  {
+    id: 2,
+    title: "The RPG Learning Engine",
+    description: "The RPG Learning Engine: A fully functional, Pokémon-inspired game template featuring turn-based combat, exploration maps, and collectibles built to prove that Storyline 360 can run a full-scale RPG (Role Playing Game) experience.",
+    image: "assets/vzone-preview.mp4",
+    videoSrc: "assets/vzone-preview.mp4",
+    link: "#",
+    previewUrl: "https://ronflakes.github.io/courses/ronmon/index.html",
+    isPreview: true,
+    details: "It started with a casual wish from a Senior Developer who wondered, \"Wouldn't it be cool if we had a truly gamified experience?\" Challenge accepted. Drawing inspiration from classics like Pokémon and typical RPGs, I set out to build something beyond a simple point-and-click course. The goal was to create a comprehensive, end-to-end \"Game Template\" that other developers could use - a robust framework complete with progression systems, combat, puzzles, and boss battles designed to make the learning process not just bearable, but genuinely rewarding.\n\nTo pull this off, I pushed Articulate Storyline to its absolute limits, utilizing complex variable structures and custom JavaScript to engineer the \"bells and whistles\" of a true RPG. The template features map-based exploration where learners gain both in-game experience (XP) and actual knowledge as they progress.\n\nA key feature I introduced is the \"Knowledge Hub.\" Instead of boring handouts, learners \"loot\" or collect information in the form of in-game Books, which are stored in their personal inventory to be read anytime. This mechanic creates a sense of ownership and accomplishment transforming content consumption into a treasure hunt. This project stands as a proof-of-concept for the community, hoping to spark inspiration in other developers to break the mold and try a completely different, enjoyable approach to eLearning."
   },
   {
     id: 3,

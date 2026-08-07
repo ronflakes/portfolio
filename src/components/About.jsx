@@ -27,21 +27,7 @@ export default function About() {
     <div id="about">
       <div className="px-5 lg:px-28 flex justify-between flex-col lg:flex-row gap-8 lg:gap-12">
         <motion.div
-          className="lg:w-1/2"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ type: "spring", stiffness: 80, damping: 10 }}
-          viewport={{ once: true }}
-        >
-          <img 
-    className="w-1/3 mx-auto" 
-    src="assets/about.png" 
-    alt="About Me Illustration" 
-  />
-        </motion.div>
-
-        <motion.div
-          className="lg:w-1/2 flex flex-col"
+          className="w-full flex flex-col"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ type: "spring", stiffness: 80, damping: 10, delay: 0.2 }}
