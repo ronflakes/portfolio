@@ -6,27 +6,49 @@ import { RiNextjsFill,RiTailwindCssFill } from "react-icons/ri";
 import { CgFigma } from "react-icons/cg";
 
 export default function Skills() {
+  const iconStyle = { width: '100%', height: 'auto', maxWidth: '60px' };
+  const outlineOnHoverStyle = {
+    ...iconStyle,
+    filter: 'drop-shadow(0.75px 0 0 #fff) drop-shadow(-0.75px 0 0 #fff) drop-shadow(0 0.75px 0 #fff) drop-shadow(0 -0.75px 0 #fff)',
+  };
+  const whiteBoxedIcon = (src, alt) => (
+    <div className="bg-white rounded-md p-2 w-full h-full flex items-center justify-center">
+      <img src={src} alt={alt} style={iconStyle} />
+    </div>
+  );
+
   const [skills] = useState([
-    { id: 1, name: "Articulate 360", icon: <img src="skills/art.jpg" alt="Articulate" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 2, name: "Premiere Pro", icon: <img src="skills/pr.png" alt="Premiere Pro" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 3, name: "Photoshop", icon: <img src="skills/ps.png" alt="Photoshop" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 4, name: "Workday", icon: <img src="skills/workday.png" alt="Workday" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 5, name: "Pictory", icon: <img src="skills/pictory.png" alt="Pictory" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 6, name: "Camtasia", icon: <img src="skills/camtasia.webp" alt="Camtasia" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 7, name: "ComfyUI", icon: <img src="skills/comfy.webp" alt="ComfyUI" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 8, name: "Captivate", icon: <img src="skills/captivate.png" alt="Captivate" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 9, name: "Vyond", icon: <img src="skills/vyond.png" alt="Vyond" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 10, name: "Audacity", icon: <img src="skills/audacity.png" alt="Audacity" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 11, name: "Canva", icon: <img src="skills/canva.svg" alt="Canva" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 12, name: "Eleven Labs", icon: <img src="skills/eleven1.png" alt="Eleven Labs" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 13, name: "WordPress", icon: <img src="skills/wp.png" alt="WordPress" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 14, name: "Google Gemini", icon: <img src="skills/gemini.webp" alt="Gemini" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 15, name: "Vegas Pro", icon: <img src="skills/vegas.png" alt="Vegas Pro" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 16, name: "360 Studio", icon: <img src="skills/360.png" alt="Insta 360 Studio" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 17, name: "Powtoon", icon: <img src="skills/Powtoon.webp" alt="Powtoon" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 18, name: "Squarespace", icon: <img src="skills/ss.webp" alt="Squarespace" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 19, name: "OBS Studio", icon: <img src="skills/obs.png" alt="OBS Studio" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
-    { id: 20, name: "Office 365", icon: <img src="skills/ofc.svg" alt="Office 365" style={{ width: '100%', height: 'auto', maxWidth: '60px' }} /> },
+    // Core Instructional Design authoring tools — lead with the industry standard
+    { id: 1, name: "Articulate 360", icon: <img src="skills/art.jpg" alt="Articulate" style={iconStyle} /> },
+    { id: 2, name: "Captivate", icon: <img src="skills/captivate.png" alt="Captivate" style={iconStyle} /> },
+    // Enterprise LMS / HRIS platform experience — shows admin-level, enterprise-scale credibility
+    { id: 3, name: "Docebo", icon: whiteBoxedIcon("skills/docebo.svg", "Docebo") },
+    { id: 4, name: "UKG", icon: <img src="skills/ukg.svg" alt="UKG" style={iconStyle} /> },
+    { id: 5, name: "Workday", icon: <img src="skills/workday.png" alt="Workday" style={iconStyle} /> },
+    // Generative AI workflow — the differentiator for a modern ID
+    { id: 6, name: "Claude", icon: <img src="skills/claude.svg" alt="Claude" style={iconStyle} /> },
+    { id: 7, name: "ChatGPT", icon: <img src="skills/chatgpt.svg" alt="ChatGPT" style={iconStyle} /> },
+    { id: 8, name: "Google Gemini", icon: <img src="skills/gemini.webp" alt="Gemini" style={iconStyle} /> },
+    { id: 9, name: "ComfyUI", icon: <img src="skills/comfy.webp" alt="ComfyUI" style={iconStyle} /> },
+    { id: 10, name: "Synthesia", icon: <img src="skills/synthesia.png" alt="Synthesia" style={iconStyle} /> },
+    { id: 11, name: "HeyGen", icon: whiteBoxedIcon("skills/heygen.svg", "HeyGen") },
+    { id: 12, name: "Eleven Labs", icon: <img src="skills/eleven1.png" alt="Eleven Labs" style={iconStyle} /> },
+    // Video & multimedia production — the craft skillset behind the AI Twin/eLearning work
+    { id: 13, name: "Premiere Pro", icon: <img src="skills/pr.png" alt="Premiere Pro" style={iconStyle} /> },
+    { id: 14, name: "Camtasia", icon: <img src="skills/camtasia.webp" alt="Camtasia" style={iconStyle} /> },
+    { id: 15, name: "Vyond", icon: <img src="skills/vyond.png" alt="Vyond" style={iconStyle} /> },
+    { id: 16, name: "Vegas Pro", icon: <img src="skills/vegas.png" alt="Vegas Pro" style={iconStyle} /> },
+    { id: 17, name: "CapCut", icon: <img src="skills/capcut.svg" alt="CapCut" style={iconStyle} /> },
+    { id: 18, name: "Pictory", icon: <img src="skills/pictory.png" alt="Pictory" style={iconStyle} /> },
+    { id: 19, name: "360 Studio", icon: <img src="skills/360.png" alt="Insta 360 Studio" style={iconStyle} /> },
+    // Design tools
+    { id: 20, name: "Photoshop", icon: <img src="skills/ps.png" alt="Photoshop" style={iconStyle} /> },
+    { id: 21, name: "Canva", icon: <img src="skills/canva.svg" alt="Canva" style={iconStyle} /> },
+    // Web & productivity
+    { id: 22, name: "WordPress", icon: <img src="skills/wp.png" alt="WordPress" style={iconStyle} /> },
+    { id: 23, name: "Squarespace", icon: <img src="skills/ss.webp" alt="Squarespace" style={outlineOnHoverStyle} /> },
+    { id: 24, name: "Office 365", icon: <img src="skills/ofc.svg" alt="Office 365" style={iconStyle} /> },
+    { id: 25, name: "OBS Studio", icon: <img src="skills/obs.png" alt="OBS Studio" style={outlineOnHoverStyle} /> },
   ]);
 
   const [experiences] = useState([
