@@ -69,7 +69,7 @@ export default function Navbar() {
         </ul>
 
         <motion.a
-          href="Ron Taruc CV 2025.pdf"
+          href="Ron Taruc CV 2026.pdf"
           target="_blank"
           className="hidden relative lg:inline-block px-4 py-2 font-medium group"
           onClick={() => {
@@ -126,7 +126,7 @@ export default function Navbar() {
                 </motion.li>
               ))}
               <motion.a
-                href="Ron Taruc CV 2025.pdf"
+                href="Ron Taruc CV 2026.pdf"
                 target="_blank"
                 className="relative inline-block px-4 py-2 font-semibold group"
                 whileHover={{ scale: 1.1 }}

@@ -153,7 +153,7 @@ export default function Contact() {
               </motion.button>
 
               <motion.a
-                href="Ron Taruc CV 2025.pdf"
+                href="Ron Taruc CV 2026.pdf"
                 target="_blank"
                 download
                 whileHover={{ scale: 1.05 }}
