@@ -20,21 +20,21 @@ export default function Skills() {
   const [skills] = useState([
     // Core Instructional Design authoring tools — lead with the industry standard
     { id: 1, name: "Articulate 360", icon: <img src="skills/art.jpg" alt="Articulate" style={iconStyle} /> },
-    { id: 2, name: "Captivate", icon: <img src="skills/captivate.png" alt="Captivate" style={iconStyle} /> },
     // Enterprise LMS / HRIS platform experience — shows admin-level, enterprise-scale credibility
-    { id: 3, name: "Docebo", icon: whiteBoxedIcon("skills/docebo.svg", "Docebo") },
-    { id: 4, name: "UKG", icon: <img src="skills/ukg.svg" alt="UKG" style={iconStyle} /> },
-    { id: 5, name: "Workday", icon: <img src="skills/workday.png" alt="Workday" style={iconStyle} /> },
+    { id: 2, name: "Docebo", icon: whiteBoxedIcon("skills/docebo.svg", "Docebo") },
+    { id: 3, name: "UKG", icon: <img src="skills/ukg.svg" alt="UKG" style={iconStyle} /> },
+    { id: 4, name: "Workday", icon: <img src="skills/workday.png" alt="Workday" style={iconStyle} /> },
     // Generative AI workflow — the differentiator for a modern ID
-    { id: 6, name: "Claude", icon: <img src="skills/claude.svg" alt="Claude" style={iconStyle} /> },
-    { id: 7, name: "ChatGPT", icon: <img src="skills/chatgpt.svg" alt="ChatGPT" style={iconStyle} /> },
-    { id: 8, name: "Google Gemini", icon: <img src="skills/gemini.webp" alt="Gemini" style={iconStyle} /> },
-    { id: 9, name: "ComfyUI", icon: <img src="skills/comfy.webp" alt="ComfyUI" style={iconStyle} /> },
-    { id: 10, name: "Synthesia", icon: <img src="skills/synthesia.png" alt="Synthesia" style={iconStyle} /> },
-    { id: 11, name: "HeyGen", icon: whiteBoxedIcon("skills/heygen.svg", "HeyGen") },
-    { id: 12, name: "Eleven Labs", icon: <img src="skills/eleven1.png" alt="Eleven Labs" style={iconStyle} /> },
+    { id: 5, name: "Claude", icon: <img src="skills/claude.svg" alt="Claude" style={iconStyle} /> },
+    { id: 6, name: "ChatGPT", icon: <img src="skills/chatgpt.svg" alt="ChatGPT" style={iconStyle} /> },
+    { id: 7, name: "Google Gemini", icon: <img src="skills/gemini.webp" alt="Gemini" style={iconStyle} /> },
+    { id: 8, name: "ComfyUI", icon: <img src="skills/comfy.webp" alt="ComfyUI" style={iconStyle} /> },
+    { id: 9, name: "Synthesia", icon: <img src="skills/synthesia.png" alt="Synthesia" style={iconStyle} /> },
+    { id: 10, name: "HeyGen", icon: whiteBoxedIcon("skills/heygen.svg", "HeyGen") },
+    { id: 11, name: "Eleven Labs", icon: <img src="skills/eleven1.png" alt="Eleven Labs" style={iconStyle} /> },
     // Video & multimedia production — the craft skillset behind the AI Twin/eLearning work
-    { id: 13, name: "Premiere Pro", icon: <img src="skills/pr.png" alt="Premiere Pro" style={iconStyle} /> },
+    { id: 12, name: "Premiere Pro", icon: <img src="skills/pr.png" alt="Premiere Pro" style={iconStyle} /> },
+    { id: 13, name: "After Effects", icon: <img src="skills/ae.png" alt="After Effects" style={iconStyle} /> },
     { id: 14, name: "Camtasia", icon: <img src="skills/camtasia.webp" alt="Camtasia" style={iconStyle} /> },
     { id: 15, name: "Vyond", icon: <img src="skills/vyond.png" alt="Vyond" style={iconStyle} /> },
     { id: 16, name: "Vegas Pro", icon: <img src="skills/vegas.png" alt="Vegas Pro" style={iconStyle} /> },
