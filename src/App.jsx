@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import Footer from './components/Footer'
 import Projects from './components/Projects'
+import DigitalStudio from './components/DigitalStudio'
 import Contact from './components/Contact'
 import ScrollProgress from './components/ScrollProgress'
 import LoadingScreen from './components/LoadingScreen'
@@ -36,6 +37,7 @@ export default function App() {
           <About />
           <Skills />
           <Projects />
+          <DigitalStudio />
           <Contact />
           <Footer />
         </div>
