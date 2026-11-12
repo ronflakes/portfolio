@@ -151,7 +151,7 @@ export default function DigitalStudio() {
       <h2 className="text-2xl lg:text-4xl text-center text-white">
         Digital <span className="font-extrabold">Studio</span>
       </h2>
-      <p className="text-center text-gray-400 mt-3 max-w-2xl mx-auto text-sm lg:text-base">
+      <p className="text-center text-gray-400 mt-3 max-w-4xl mx-auto text-sm lg:text-base">
         Digital twins, motion graphics, AI films and websites I've built beyond the course itself.
       </p>
 
