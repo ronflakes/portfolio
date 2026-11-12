@@ -53,8 +53,12 @@ const works = [
     tags: ["AI film", "Series", "Filipino"] },
   { id: 10, category: "Films & Edits", type: "youtube", youtubeId: "_3UOT4jriDE",
     title: "Diwata",
-    description: "A music video released on my YouTube channel.",
-    tags: ["Music video"] },
+    description: "An AI-generated music video released on my YouTube channel.",
+    tags: ["Music video", "AI-generated"] },
+  { id: 16, category: "Films & Edits", type: "youtube", youtubeId: "Op7gxCue2KU",
+    title: "Parang Kailan Lamang ang Minsan",
+    description: "An AI-generated music video released on my YouTube channel.",
+    tags: ["Music video", "AI-generated"] },
   { id: 11, category: "Films & Edits", type: "youtube", youtubeId: "qlkSKfW5Ygw",
     title: "The Friend You Stopped Calling",
     description: "A faceless storytelling video for my YouTube channel Lonely Hours Club, with AI visuals, AI voice and a full edit.",
@@ -115,8 +119,8 @@ function Thumb({ work }) {
       )}
       {work.type !== "site" && (
         <span className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <span className="w-14 h-14 rounded-full bg-white/90 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-            <TbPlayerPlayFilled size={24} />
+          <span className="w-11 h-11 rounded-full bg-white/90 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+            <TbPlayerPlayFilled size={20} />
           </span>
         </span>
       )}
@@ -165,30 +169,30 @@ export default function DigitalStudio() {
         ))}
       </div>
 
-      <div className="mt-8 lg:mt-12 grid gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 lg:mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {shown.map((work, index) => (
           <motion.button
             key={work.id}
             type="button"
             onClick={() => open(work)}
-            className="group text-left bg-neutral-950 rounded-2xl border border-gray-800 hover:border-gray-500 p-4 flex flex-col gap-4 transition-colors"
+            className="group text-left bg-neutral-950 rounded-xl border border-gray-800 hover:border-gray-500 p-3 flex flex-col gap-3 transition-colors"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", stiffness: 80, damping: 12, delay: (index % 3) * 0.1 }}
+            transition={{ type: "spring", stiffness: 80, damping: 12, delay: (index % 4) * 0.1 }}
             viewport={{ once: true }}
             aria-label={work.type === "site" ? `Visit ${work.title} website` : `Play ${work.title}`}
           >
             <Thumb work={work} />
-            <div className="space-y-2">
-              <p className="text-xs uppercase tracking-widest text-gray-500">{work.category}</p>
-              <p className="font-bold text-white text-lg lg:text-xl flex items-center gap-2">
+            <div className="space-y-1.5">
+              <p className="text-[10px] uppercase tracking-widest text-gray-500">{work.category}</p>
+              <p className="font-bold text-white text-base flex items-center gap-2">
                 {work.title}
-                {work.type === "site" && <TbExternalLink size={18} className="shrink-0" />}
+                {work.type === "site" && <TbExternalLink size={16} className="shrink-0" />}
               </p>
-              <p className="font-light text-sm/6 text-gray-300">{work.description}</p>
-              <div className="flex flex-wrap gap-2 pt-1">
+              <p className="font-light text-xs/5 text-gray-300">{work.description}</p>
+              <div className="flex flex-wrap gap-1.5 pt-1">
                 {work.tags.map((tag) => (
-                  <span key={tag} className="text-xs text-gray-300 border border-gray-700 rounded-full px-2.5 py-0.5">
+                  <span key={tag} className="text-[10px] text-gray-300 border border-gray-700 rounded-full px-2 py-0.5">
                     {tag}
                   </span>
                 ))}
